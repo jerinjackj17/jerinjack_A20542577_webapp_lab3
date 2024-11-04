@@ -9,14 +9,13 @@
 <body>
 <div style="text-align: center; margin-bottom: 15px;">
     <h2 class="name-title">ITMD 541 - Lab 3 - Jerin Jack Joseph Raj</h2>
-		
     <div class="container">
         <div class="title-box">
             <h1>Tip Calculator</h1>
         </div>
         <form id="tipForm">
             <label for="billTotal">Bill Total $</label>
-            <input type="text" id="billTotal" placeholder="Enter amount" required>
+            <input type="text" id="billTotal" placeholder="Enter amount" required oninput="calculateTip()">
 
             <label for="currency">Select Currency</label>
             <select id="currency" onchange="convertCurrency()">
@@ -26,7 +25,7 @@
             </select>
             
             <label for="tipPercentage">Tip Percentage <span id="tipDisplay">15%</span></label>
-            <input type="range" id="tipPercentage" min="0" max="100" value="15" oninput="updateTipPercentage()">
+            <input type="range" id="tipPercentage" min="0" max="100" value="15" oninput="updateTipPercentage(); calculateTip();">
             
             <label for="tipAmount">Tip Amount</label>
             <input type="text" id="tipAmount" disabled>
