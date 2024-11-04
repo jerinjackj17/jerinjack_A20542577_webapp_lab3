@@ -109,6 +109,12 @@ button:hover {
     font-style: italic;
 }
 
+input#tipAmount,
+input#totalWithTip {
+    color: #000; /* Darker color for text */
+    font-weight: bold; /* Optional: Makes text bold */
+}
+
 @media (max-width: 600px) {
     .container {
         padding: 15px;
