@@ -39,7 +39,7 @@ h1 {
 }
 
 .title-box p {
-    margin-top: 5px; /* Added margin for spacing */
+    margin-top: 5px;
 }
 
 label {
@@ -67,9 +67,8 @@ input[type="range"] {
 
 input[type="range"] {
     accent-color: #0288d1;
-    /* Make the slider wider for better interaction */
-    width: calc(100% + 16px); /* Expand width */
-    margin-left: -8px; /* Center the slider */
+    width: calc(100% + 16px); 
+    margin-left: -8px; 
 }
 
 input[type="text"]:disabled {
@@ -128,7 +127,7 @@ button:hover {
     }
 
     .title-box {
-        padding: 8px; /* Adjust padding for smaller screens */
+        padding: 8px;
     }
 }
 
